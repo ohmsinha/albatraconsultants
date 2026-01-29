@@ -1,0 +1,393 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Globe, Store, ShieldCheck, Check, ArrowRight, Truck, Factory, Utensils, Sprout, CheckCircle, Leaf, HardHat, TrendingUp, Award, FileCheck, Search, FileText, ClipboardCheck } from 'lucide-react';
+import LeadForm from '../components/LeadForm';
+import SEO from '../components/SEO';
+import ProcessTimeline, { Step } from '../components/ProcessTimeline';
+
+const ServiceFSMS: React.FC = () => {
+  const steps: Step[] = [
+    {
+      id: 1,
+      title: "Gap Analysis",
+      description: "Assess FSMS against ISO 22000.",
+      details: "We analyze your current food safety protocols against ISO 22000:2018 requirements, identifying critical control points (CCPs) and gaps in your HACCP plan. A detailed report guides the next steps.",
+      icon: <Search className="w-full h-full" />
+    },
+    {
+      id: 2,
+      title: "Implementation",
+      description: "HACCP plans & training.",
+      details: "Our experts help you develop robust HACCP plans, prerequisite programs (PRPs), and train your food handlers and safety team on the new management system to ensure full compliance.",
+      icon: <FileText className="w-full h-full" />
+    },
+    {
+      id: 3,
+      title: "Internal Audit",
+      description: "Verify compliance & safety.",
+      details: "We conduct rigorous internal audits to verify that your FSMS is effectively implemented and maintained, ensuring readiness for the external certification body and health authority inspections.",
+      icon: <ClipboardCheck className="w-full h-full" />
+    },
+    {
+      id: 4,
+      title: "Certification",
+      description: "External audit support.",
+      details: "We support you during the Stage 1 and Stage 2 external audits, assisting in closing any non-conformities to ensure you successfully achieve ISO 22000 certification.",
+      icon: <Award className="w-full h-full" />
+    }
+  ];
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="ISO 22000 & HACCP Certification UAE | Food Safety - Al Batra"
+        description="Leading Food Safety Management System (FSMS) consultants. Get HACCP and ISO 22000 certified for catering, manufacturing, and hospitality in the UAE."
+      />
+      
+      {/* Service Hero */}
+      <section className="relative pt-32 pb-20 bg-secondary">
+        <div className="absolute inset-0 z-0 overflow-hidden">
+            {/* Background image for food safety context */}
+             <div className="absolute inset-0 z-0">
+               <img
+                  src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?q=80&w=2070&auto=format&fit=crop"
+                  alt="Laboratory food safety testing"
+                  className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+               />
+               <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-transparent"></div>
+             </div>
+             <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -ml-20 -mb-20"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
+                        <span className="w-2 h-2 rounded-full bg-primary"></span>
+                        <span className="text-xs font-medium text-slate-200 uppercase tracking-wider">ISO 22000:2018 Experts</span>
+                    </div>
+                    
+                    <h1 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                        Food Safety Management Systems (ISO 22000) <br/>
+                        <span className="text-primary">Certification Services</span>
+                    </h1>
+                    
+                    <p className="text-lg text-slate-300 leading-relaxed">
+                        ISO 22000 provides a framework for the development, implementation, and continual improvement of a Food Safety Management System (FSMS), combining core fundamentals of ISO 9001 and HACCP.
+                    </p>
+
+                    <ul className="space-y-3 pt-2">
+                        <li className="flex items-center text-slate-300">
+                            <Check className="w-5 h-5 text-primary mr-3" />
+                            100% Certification Success Rate
+                        </li>
+                         <li className="flex items-center text-slate-300">
+                            <Check className="w-5 h-5 text-primary mr-3" />
+                            Experienced Lead Auditors
+                        </li>
+                    </ul>
+
+                    <div className="pt-6">
+                         <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-lg text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-teal-900/30">
+                            Start Certification
+                            <ArrowRight className="ml-2 w-5 h-5" />
+                        </a>
+                    </div>
+                </div>
+
+                <div className="w-full max-w-md ml-auto">
+                     <LeadForm 
+                        title="Get Your FSMS Quote"
+                        subtitle="Fast response. No hidden fees."
+                        buttonText="Request Quote"
+                        className="bg-white"
+                     />
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Trusted Bar */}
+      <div className="bg-white border-b border-slate-200 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div className="flex justify-center gap-8 md:gap-12 opacity-40 grayscale">
+                <span className="font-serif font-bold text-lg">Bateel</span>
+                <span className="font-sans font-bold text-lg">ETIHAD</span>
+                <span className="font-mono font-bold text-lg">FleetLine</span>
+                <span className="uppercase font-bold text-lg">Dubai Asset Mgmt</span>
+                <span className="font-bold text-lg">American Center</span>
+             </div>
+        </div>
+      </div>
+
+      {/* 3 Key Benefits */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+                 <h2 className="text-sm text-primary font-bold tracking-wide uppercase mb-2">Why ISO 22000?</h2>
+                 <h3 className="text-3xl font-extrabold text-secondary">3 Key Benefits of ISO 22000</h3>
+                 <p className="mt-4 text-slate-500 max-w-2xl mx-auto">Implementing a Food Safety Management System ensures product safety and strengthens your market position.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Benefit 1 */}
+                <div className="relative group rounded-xl overflow-hidden h-80 shadow-lg hover:shadow-xl transition-all">
+                    <img 
+                        src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" 
+                        alt="Global Compliance" 
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/70 to-secondary/30"></div>
+                    <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
+                        <div className="w-12 h-12 bg-primary/20 backdrop-blur-md rounded-lg flex items-center justify-center mb-4 border border-primary/30">
+                            <Globe className="w-6 h-6 text-primary" />
+                        </div>
+                        <h4 className="text-xl font-bold mb-2">Global Compliance</h4>
+                        <p className="text-sm text-slate-200 leading-relaxed opacity-90">
+                            Achieve full compliance with the Codex HACCP principles and international food safety standards required for global trade.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Benefit 2 */}
+                <div className="relative group rounded-xl overflow-hidden h-80 shadow-lg hover:shadow-xl transition-all">
+                    <img 
+                        src="https://images.unsplash.com/photo-1580913428023-02c69e1a013d?q=80&w=2070&auto=format&fit=crop" 
+                        alt="Market Access" 
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/70 to-secondary/30"></div>
+                    <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
+                        <div className="w-12 h-12 bg-primary/20 backdrop-blur-md rounded-lg flex items-center justify-center mb-4 border border-primary/30">
+                            <Store className="w-6 h-6 text-primary" />
+                        </div>
+                        <h4 className="text-xl font-bold mb-2">Market Access</h4>
+                        <p className="text-sm text-slate-200 leading-relaxed opacity-90">
+                            Gain acceptance by major customers like supermarkets and access new markets that demand certified food safety systems.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Benefit 3 */}
+                <div className="relative group rounded-xl overflow-hidden h-80 shadow-lg hover:shadow-xl transition-all">
+                    <img 
+                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070&auto=format&fit=crop" 
+                        alt="Operational Reputation" 
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/70 to-secondary/30"></div>
+                    <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
+                        <div className="w-12 h-12 bg-primary/20 backdrop-blur-md rounded-lg flex items-center justify-center mb-4 border border-primary/30">
+                            <ShieldCheck className="w-6 h-6 text-primary" />
+                        </div>
+                        <h4 className="text-xl font-bold mb-2">Operational Reputation</h4>
+                        <p className="text-sm text-slate-200 leading-relaxed opacity-90">
+                            Secure a competitive advantage in the marketplace and significantly improve your business reputation and corporate image.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Who is this for? */}
+      <section className="py-20 bg-secondary relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="bg-secondary-light/30 rounded-3xl p-8 md:p-12 border border-slate-600/50 backdrop-blur-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 className="text-3xl font-extrabold text-white mb-6">Who is this for?</h3>
+                        <p className="text-slate-300 mb-8 text-lg">ISO 22000 is applicable to all organizations in the food chain, with critical impact for:</p>
+                        
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="flex items-center p-4 bg-secondary/50 rounded-lg border border-slate-600/50">
+                                <Sprout className="w-5 h-5 text-primary mr-3" />
+                                <span className="text-white font-medium text-sm">Food Producers</span>
+                            </div>
+                            <div className="flex items-center p-4 bg-secondary/50 rounded-lg border border-slate-600/50">
+                                <Utensils className="w-5 h-5 text-primary mr-3" />
+                                <span className="text-white font-medium text-sm">Catering Services</span>
+                            </div>
+                            <div className="flex items-center p-4 bg-secondary/50 rounded-lg border border-slate-600/50">
+                                <Factory className="w-5 h-5 text-primary mr-3" />
+                                <span className="text-white font-medium text-sm">Manufacturers</span>
+                            </div>
+                            <div className="flex items-center p-4 bg-secondary/50 rounded-lg border border-slate-600/50">
+                                <Truck className="w-5 h-5 text-primary mr-3" />
+                                <span className="text-white font-medium text-sm">Storage & Distribution</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden shadow-2xl">
+                         <img 
+                            src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2070&auto=format&fit=crop" 
+                            alt="Chefs in kitchen discussing" 
+                            className="absolute inset-0 w-full h-full object-cover"
+                         />
+                         <div className="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Case Studies & Impact */}
+      <section className="py-20 bg-slate-50">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+                 <h2 className="text-sm text-primary font-bold tracking-wide uppercase mb-2">Client Success</h2>
+                 <h3 className="text-3xl font-extrabold text-secondary">Proven Results in Food Safety</h3>
+                 <p className="mt-4 text-slate-500 max-w-2xl mx-auto">We enable UAE food businesses to meet strict safety standards and expand their market reach.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Case Study 1 */}
+                <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col hover:shadow-lg transition-shadow">
+                    <div className="flex justify-between items-start mb-6">
+                        <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-bold uppercase tracking-wide">
+                           <Factory className="w-3 h-3 mr-1" /> Manufacturing
+                        </div>
+                        <div className="text-right">
+                           <div className="text-2xl font-extrabold text-primary">+200%</div>
+                           <div className="text-xs text-slate-400 font-medium">Export Revenue</div>
+                        </div>
+                    </div>
+                    
+                    <h4 className="text-xl font-bold text-secondary mb-3">Global Market Entry</h4>
+                    <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                        A local date manufacturer wanted to export to European markets. By guiding them to achieve FSSC 22000 compliance, we helped them pass strict retailer audits.
+                    </p>
+                    
+                    <div className="mt-auto pt-6 border-t border-slate-50">
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="flex items-center text-sm text-slate-700 font-medium">
+                                <Award className="w-4 h-4 text-primary mr-2" />
+                                A-Grade Compliance
+                            </div>
+                            <div className="flex items-center text-sm text-slate-700 font-medium">
+                                <TrendingUp className="w-4 h-4 text-primary mr-2" />
+                                New EU Markets
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Case Study 2 */}
+                <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col hover:shadow-lg transition-shadow">
+                    <div className="flex justify-between items-start mb-6">
+                        <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold uppercase tracking-wide">
+                           <Utensils className="w-3 h-3 mr-1" /> Hospitality
+                        </div>
+                        <div className="text-right">
+                           <div className="text-2xl font-extrabold text-primary">Zero</div>
+                           <div className="text-xs text-slate-400 font-medium">Hygiene Violations</div>
+                        </div>
+                    </div>
+                    
+                    <h4 className="text-xl font-bold text-secondary mb-3">Standardizing Safety</h4>
+                    <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                        We unified food safety protocols across 5 properties for a boutique hotel chain, simplifying staff training and ensuring consistent guest safety standards.
+                    </p>
+                    
+                    <div className="mt-auto pt-6 border-t border-slate-50">
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="flex items-center text-sm text-slate-700 font-medium">
+                                <FileCheck className="w-4 h-4 text-primary mr-2" />
+                                Municipality Approved
+                            </div>
+                            <div className="flex items-center text-sm text-slate-700 font-medium">
+                                <Leaf className="w-4 h-4 text-primary mr-2" />
+                                30% Less Waste
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </section>
+
+      {/* Process to Certification */}
+      <ProcessTimeline 
+        steps={steps} 
+        sectionTitle="Process to Certification"
+        sectionSubtitle="We simplify the complex path to ISO 22000 certification into a clear, manageable timeline."
+      />
+
+      {/* Testimonial */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+            <div className="mb-8 flex justify-center text-primary/30">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z" /></svg>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-medium text-secondary mb-8 leading-snug">
+                "Al Batra's expertise in ISO 22000 was invaluable. They helped us navigate complex food safety regulations and achieve certification swiftly, opening doors to major retail partners."
+            </h3>
+            <div className="flex items-center justify-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden shadow-sm border border-slate-200">
+                     <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" 
+                      alt="Mohammed Al-Qasimi" 
+                      className="w-full h-full object-cover"
+                    />
+                </div>
+                <div className="text-left">
+                    <div className="font-bold text-secondary text-sm">Mohammed Al-Qasimi</div>
+                    <div className="text-slate-500 text-xs">Operations Director, Fresh Foods LLC</div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Cross Sell */}
+      <section className="py-16 bg-white border-t border-slate-100">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-end mb-8">
+                <div>
+                     <h3 className="text-xl font-bold text-secondary">Other Services</h3>
+                     <p className="text-sm text-slate-500 mt-1">Explore our other ISO & safety certification services.</p>
+                </div>
+                <Link to="/contact" className="text-primary text-sm font-bold flex items-center hover:text-primary-dark">
+                    Contact for bundle deal <ArrowRight className="w-4 h-4 ml-1"/>
+                </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 {/* Card 1 */}
+                 <Link to="/service/qms" className="p-6 rounded-lg border border-slate-100 hover:border-primary/50 transition-colors flex justify-between items-start group">
+                    <div>
+                        <h4 className="font-bold text-secondary text-sm mb-2">ISO 9001 (QMS)</h4>
+                        <p className="text-xs text-slate-500 line-clamp-2">Quality Management Systems to improve operational consistency.</p>
+                    </div>
+                    <div className="text-slate-300 group-hover:text-primary transition-colors">
+                        <CheckCircle className="w-5 h-5" />
+                    </div>
+                 </Link>
+                 {/* Card 2 */}
+                 <Link to="/service/ems" className="p-6 rounded-lg border border-slate-100 hover:border-primary/50 transition-colors flex justify-between items-start group">
+                    <div>
+                        <h4 className="font-bold text-secondary text-sm mb-2">ISO 14001 (EMS)</h4>
+                        <p className="text-xs text-slate-500 line-clamp-2">Environmental Management Systems to reduce your ecological footprint.</p>
+                    </div>
+                    <div className="text-slate-300 group-hover:text-primary transition-colors">
+                        <Leaf className="w-5 h-5" />
+                    </div>
+                 </Link>
+                 {/* Card 3 */}
+                 <Link to="/service/ohsas" className="p-6 rounded-lg border border-slate-100 hover:border-primary/50 transition-colors flex justify-between items-start group">
+                    <div>
+                        <h4 className="font-bold text-secondary text-sm mb-2">ISO 45001 (OH&S)</h4>
+                        <p className="text-xs text-slate-500 line-clamp-2">Occupational Health & Safety to protect your workforce.</p>
+                    </div>
+                    <div className="text-slate-300 group-hover:text-primary transition-colors">
+                        <HardHat className="w-5 h-5" />
+                    </div>
+                 </Link>
+            </div>
+         </div>
+      </section>
+
+    </div>
+  );
+};
+
+export default ServiceFSMS;
