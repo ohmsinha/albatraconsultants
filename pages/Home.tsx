@@ -47,9 +47,9 @@ const Home: React.FC = () => {
                   Explore Services
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-                <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-lg text-white border border-slate-400 hover:bg-white/10 transition-all">
-                  View Case Studies
-                </button>
+                <Link to="/blogs" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-lg text-white border border-slate-400 hover:bg-white/10 transition-all">
+                  View Industry Insights
+                </Link>
               </div>
             </div>
 

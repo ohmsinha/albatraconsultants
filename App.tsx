@@ -29,6 +29,8 @@ import ServiceISO15189 from './pages/ServiceISO15189';
 import ServiceISO22870 from './pages/ServiceISO22870';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
+import Blogs from './pages/Blogs';
+import BlogPost from './pages/BlogPost';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -49,6 +51,8 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/service/qms" element={<ServiceQMS />} />
             <Route path="/service/fsms" element={<ServiceFSMS />} />
             <Route path="/service/ohsas" element={<ServiceOHSAS />} />
